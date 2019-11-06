@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MenuItem from './MenuItem';
 
-class DirectoryMenu extends Component {
+class Directory extends Component {
   state = {
     sections: [
       {
@@ -50,4 +50,4 @@ class DirectoryMenu extends Component {
   }
 }
 
-export default DirectoryMenu;
+export default Directory;

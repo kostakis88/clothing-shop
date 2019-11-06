@@ -1,9 +1,9 @@
 import React from 'react';
-import DirectoryMenu from './DirectoryMenu';
+import Directory from '../components/Directory';
 
 const HomePage = () => {
   return (
-    <DirectoryMenu />
+    <Directory />
   );
 }
 
