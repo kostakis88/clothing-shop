@@ -2,7 +2,7 @@ import React from 'react';
 import SignIn from '../components/SignIn';
 
 const SignPage = () => (
-  <div className="sign-in-sign-out">
+  <div className="sign-in-and-sign-out">
     <SignIn />
   </div>
 )
