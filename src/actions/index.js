@@ -8,3 +8,8 @@ export const setCurrentUser = user => ({
 export const toggleCartDropDown = () => ({
   type: actionTypes.TOGGLE_CART_DROPDOWN
 });
+
+export const addItem = item => ({
+  type: actionTypes.ADD_ITEM,
+  payload: item
+});

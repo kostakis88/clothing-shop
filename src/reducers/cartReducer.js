@@ -1,19 +1,25 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const INITIAL_STATE = {
-  hidden: true
+  hidden: true,
+  cartItems: []
 }
 
-const toggleCartDropDownReducer = (state = INITIAL_STATE, action) => {
+const cartReducer = (state = INITIAL_STATE, action) => {
   switch(action.type){
     case actionTypes.TOGGLE_CART_DROPDOWN:
       return {
         ...state,
         hidden: !state.hidden
       }
+    case actionTypes.ADD_ITEM:
+      return {
+        ...state,
+        cartItems: [...state.cartItems, action.payload]
+      }
     default:
       return state; 
   }
 };
 
-export default toggleCartDropDownReducer;
+export default cartReducer;
