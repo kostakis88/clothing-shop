@@ -4,16 +4,13 @@ import { createStructuredSelector } from 'reselect';
 import { selectDirectorySections } from '../selectors/directorySelectors';
 import MenuItem from './MenuItem';
 
-const Directory = ({sections}) => {
-  console.log(sections);
-  return (
-    <div className="directory-menu">
-        {sections.map(({id, ...otherSectionProps}) => 
-          <MenuItem key={id} {...otherSectionProps}/>
-        )}
-      </div>
-  );
-};
+const Directory = ({sections}) => (
+  <div className="directory-menu">
+      {sections.map(({id, ...otherSectionProps}) => 
+        <MenuItem key={id} {...otherSectionProps}/>
+      )}
+  </div>
+);
 
 const mapStateToProps = createStructuredSelector({
   sections: selectDirectorySections
