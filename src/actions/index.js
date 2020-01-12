@@ -23,3 +23,8 @@ export const removeItem = item => ({
   type: actionTypes.REMOVE_ITEM,
   payload: item
 });
+
+export const updateCollections = (collectionsMap) => ({
+  type: actionTypes.UPDATE_COLLECTIONS,
+  payload: collectionsMap
+});
