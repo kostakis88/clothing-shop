@@ -6,7 +6,7 @@ const Spinner = WrappedComponent => ({ isLoading, ...otherProps }) => {
     <SpinnerOverlay>
       <SpinnerContainer />
     </SpinnerOverlay>
-  ) :(
+  ) : (
     <WrappedComponent {...otherProps} />
   );
 }
